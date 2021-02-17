@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'core',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -128,8 +129,10 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend'
 ]
 SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
 
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # MESSAGE_TAGS = {
 #     messages.INFO: 'alert alert-info',
